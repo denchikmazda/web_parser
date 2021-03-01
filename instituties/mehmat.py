@@ -1,6 +1,6 @@
 from urllib.request import urlopen
 from bs4 import BeautifulSoup as bs
-from ivmiit import get_link_from_button
+from instituties.ivmiit import get_link_from_button
 
 def get_name_links_cathedras(url):
     site = urlopen(url)
@@ -67,5 +67,5 @@ def parse_mehmat(url):
         res[name] = len(get_stuff(stuff_url))
     return res
 
-print(parse_mehmat('https://kpfu.ru/math'))
+# print(parse_mehmat('https://kpfu.ru/math'))
 
