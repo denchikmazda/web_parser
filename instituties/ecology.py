@@ -1,6 +1,6 @@
 from urllib.request import urlopen
 from bs4 import BeautifulSoup as bs
-from ivmiit import get_link_from_button
+from instituties.ivmiit import get_link_from_button
 
 def get_name_link_of_cathedras_ecology(url):
     site = urlopen(url)
